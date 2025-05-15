@@ -1,5 +1,9 @@
 # 💫 About Me:
-Helllo!👀<br>Welcome to my profile where you will find my latest learning’s and project that include both completed and ongoing.<br>--------------------------------------------------------------------------<br>In my about I am a AIML enthusiast from INDIA with a passion for turning data into insights and building intelligent systems.<br>____________________________________________<br>Let’s connect a collaborate😉.
+I'm a AIML specialist and web developer from India, passionate about building intelligent systems that make a difference. My journey began with a fascination for how technology could solve complex problems, which led me to explore the intersection of artificial intelligence and web development.
+
+With expertise in both AI technologies and full-stack development, I create solutions that combine sophisticated machine learning models with intuitive user interfaces. I believe that the most powerful applications are those that leverage cutting-edge AI while remaining accessible and user-friendly.
+
+Today, I have a vision of working with clients globally to develop custom AI solutions and scalable web applications that address real business challenges. Whether it's fine-tuning language models, building neural networks, or creating responsive web applications, I'm committed to delivering high-quality, impactful work.
 
 
 ## 🌐 Socials:
