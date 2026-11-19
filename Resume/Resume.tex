@@ -1,174 +1,169 @@
-%-------------------------
-% Resume in Latex
-% Author : Rana Talukdar
-% Based off of: https://github.com/Auth0r-C0dez
-% License : MIT
-%------------------------
 
-\documentclass[letterpaper,11pt]{article}
+\documentclass[10pt,a4paper]{article}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
+%---------------- PACKAGES ----------------
+\usepackage[a4paper,top=0.42in,bottom=0.42in,left=0.55in,right=0.55in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
 \usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
 \usepackage{tabularx}
-\usepackage{fontawesome5}
-\usepackage{multicol}
-\setlength{\multicolsep}{-3.0pt}
-\setlength{\columnsep}{-1pt}
-\input{glyphtounicode}
+\usepackage{microtype}
 
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-% Adjust margins
-\addtolength{\oddsidemargin}{-0.6in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1.19in}
-\addtolength{\topmargin}{-.7in}
-\addtolength{\textheight}{1.4in}
-
+%---------------- FORMATTING ----------------
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{0pt}
+\setlength{\tabcolsep}{0pt}
 \urlstyle{same}
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
 
-\titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large\bfseries
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+\titleformat{\section}
+  {\normalsize\bfseries}
+  {}{0em}{}[\titlerule]
 
-\pdfgentounicode=1
+\titlespacing*{\section}{0pt}{5pt}{2pt}
 
-%-------------------------
-% Custom commands
+\setlist[itemize]{
+  leftmargin=1.2em,
+  itemsep=1pt,
+  topsep=1pt,
+  parsep=0pt,
+  partopsep=0pt
+}
+
+%---------------- CUSTOM COMMANDS ----------------
 \newcommand{\resumeItem}[1]{
-  \item\small{#1 \vspace{-2pt}}
+  \item\small{#1}
 }
 
 \newcommand{\resumeSubheading}[4]{
-  \vspace{-2pt}\item
-    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{#1} & \textbf{\small #2} \\
-      \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+  \textbf{#1} \hfill \small #2\\
+  \textit{\small #3} \hfill \textit{\small #4}
 }
 
-\newcommand{\resumeProjectHeading}[2]{
-    \item
-    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
-      \small#1 & \textbf{\small #2}\\
-    \end{tabular*}\vspace{-7pt}
+\newcommand{\projectHeading}[2]{
+  \textbf{#1} \hfill \textit{\small #2}
 }
 
-\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
-
-\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
-
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
-\newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
-
-%-------------------------------------------
-%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+%================ DOCUMENT =================
 \begin{document}
 
-%----------HEADING----------
+%---------------- HEADER ----------------
 \begin{center}
-    {\Huge \scshape RANA TALUKDAR} \\ \vspace{1pt}
-    \small \href{https://github.com/Auth0r-C0dez}{\faGithub\ GitHub} ~ 
-    \href{https://devwithrana.vercel.app/}{Portfolio} ~ 
-    +91 8822952024 ~ 
-    \href{https://www.linkedin.com/in/rana-talukdar-782b60293/}{\faLinkedin\ LinkedIn} ~
-    \href{mailto:kafirana1507@gmail.com}{\faEnvelope\ kafirana1507@gmail.com}
-    \vspace{-8pt}
+    {\LARGE \textbf{RANA TALUKDAR}}\\[4pt]
+    \small
+    Bhopal, India \;|\;
+    +91 8822952024 \;|\;
+    \href{mailto:kafirana1507@gmail.com}{kafirana1507@gmail.com} \;|\;
+    \href{https://github.com/Auth0r-C0dez}{GitHub} \;|\;
+    \href{https://www.linkedin.com/in/rana-talukdar-782b60293/}{LinkedIn} \;|\;
+    \href{https://devwithrana.vercel.app/}{Portfolio}
 \end{center}
-%-----------EDUCATION-----------
+%---------------- EDUCATION ----------------
 \section{Education}
-\resumeSubHeadingListStart
+
 \resumeSubheading
-  {Vellore Institue of Technology}{Sept 2023 -- Ongoing}
-  {B.Tech in Computer Science and Engineering (AIML)}{Bhopal, India}
-  \resumeItemListStart
-    \resumeItem{8.33 CGPA, AIML, Web Development, SaaS.}
-  \resumeItemListEnd
-\resumeSubHeadingListEnd
+{Vellore Institute of Technology, Bhopal}{Sept 2023 -- Present}
+{B.Tech. Computer Science and Engineering -- AI \& ML}
+{CGPA: 8.15/10}
 
 %-----------CAREER SUMMARY-----------
+
 \section{Career Summary}
-Building ML and full-stack projects since 2023 with an in-depth understanding of ML-algorithms, GenAI, Neural Networks and MERN. First runner's up at Neurathon at NIT Silchar. Ex ML intern at BlockseBlock. Currently looking for a Full Stack Developer / ML Engineer role.
 
-%-----------SKILLS-----------
-\section{Skills \& Interests}
-\textbf{Skills:}  ML, LLM, NLP, LangChain, Computer Vision, RAG, NextJS, MERN, SQL, AWS, Docker. \\
-\textbf{Soft Skills:} Improviser, Leadership. \\
-\textbf{Interests:} Sci-Fi content, Cricket, Travelling.
+AI/ML and Full Stack Developer with hands-on experience building Generative AI applications, autonomous agent workflows, machine learning models, and full-stack applications. Experienced in Python, LLMs, RAG, LangChain, FastAPI, MERN, and local LLM deployment using Ollama. Currently working as an AI Systems Engineering Intern at Makzu Labs, developing local-first AI automation infrastructure and schema-driven data extraction pipelines.
 
-%-----------PROJECTS-----------
-\section{Projects}
-\resumeSubHeadingListStart
 
-\resumeProjectHeading{\textbf{MailVoyager} $|$ Prompting x Full Stack x Automation}{July 2025 -- July 2025}
-\resumeItemListStart
-  \resumeItem{An automation system that was developed for sending emails only via prompting.}
-  \resumeItem{Integrated backend using FastAPI.}
-  \resumeItem{Fully functional automation system that opens Chrome logs into Gmail account and sends emails based on user requirements.}
-  \resumeItem{No API used, all parts of the automation are coded.}
-\resumeItemListEnd
+%---------------- EXPERIENCE ----------------
+\section{Experience}
 
-\resumeProjectHeading{\textbf{Vylus} $|$ Automation-SaaS}{Nov 2025 -- Present}
-\resumeItemListStart
-  \resumeItem{Developed advanced task scheduling application.}
-  \resumeItem{Integrated google calender, maps and collaborative task scheduling.}
-  \resumeItem{Available in what'sapp, telegram and web-based.}
-  \resumeItem{Integrated smart LLM that figures out public sentiment and others to priotize tasks and organise accordingly.}
-\resumeItemListEnd
-
-\resumeProjectHeading{\textbf{ISROnautsAI} $|$ ML Engineer}{June 2023 -- July 2024}
-\resumeItemListStart
-  \resumeItem{Developed a cloud motion prediction model using INSTAT data.}
-  \resumeItem{Fused CNN with diffusion model.}
-  \resumeItem{Added encoder and decoder for enhancing model performance.}
-  \resumeItem{Deployed in Hugging Face with proper working backend.}
-\resumeItemListEnd
-
-\resumeProjectHeading{\textbf{Hackathon-Swiper} $|$ Full-Stack developer}{Aug 2025 -- Present}
-\resumeItemListStart
-  \resumeItem{Developed a tinder like application for college hackathons.}
-  \resumeItem{End to end based on Next.js.}
-  \resumeItem{Leveraged Firebase for deploying and database.}
-  \resumeItem{Used personally trained ML model for recommendation.}
-\resumeItemListEnd
-
-\resumeSubHeadingListEnd
-
-%-----------PUBLICATIONS-----------
-\section{Publications}
-\resumeSubHeadingListStart
 \resumeSubheading
-  {A State-of-Art Survey on Generative AI Techniques for Floor Planning}{Sept 2024 -- May 2025}
-  {\parbox[t]{0.7\textwidth}{\raggedright \textit{\small Workshop: GenAICHI 2025 – Generative AI and Human-Computer Interaction \\ Conference: CHI 2025 – ACM Conference on Human Factors in Computing Systems}}}{VIT Bhopal University}
-\resumeSubHeadingListEnd
+{Makzu Labs}{Oct 2026 -- Present}
+{AI Systems Engineering Intern -- Autonomous Agent Workflows}
+{Remote}
+\begin{itemize}
+    \resumeItem{Developing local-first AI enabling LLM to run locally hosted quantized models without external API dependencies.}
+    \resumeItem{Implemented a dynamic strategy loader to retrieve and inject business strategies, proof points, and tone rules into agent workflows.}
+    \resumeItem{Building a schema-driven RFQ extraction pipeline using Pydantic and dynamic model generation to convert WhatsApp, LinkedIn, and email inquiries into structured lead records.}
+    \resumeItem{Working on field validation, missing-information detection, and pipeline verification to improve the reliability of automated lead processing.}
+\end{itemize}
 
+\resumeSubheading
+{MPOnline Limited}{May 2026 -- Aug 2026}
+{Intern -- Certification in Advanced Software Engineering and AI Foundation}
+{Bhopal, India}
+\begin{itemize}
+    \resumeItem{Completed an internship focused on advanced software engineering and AI foundations, gaining exposure to software development practices and foundational AI concepts.}
+\end{itemize}
 
+\resumeSubheading
+{BlockseBlock}{Aug 2025 -- Oct 2025}
+{Machine Learning Intern}
+{Remote}
+\begin{itemize}
+    \resumeItem{Worked in a machine learning internship role, gaining practical exposure to ML concepts and project-based development.}
+\end{itemize}
 
-%-----------EXTRACURRICULAR-----------
-\section{Extracurriculars}
-\resumeSubHeadingListStart
-  \resumeItemListStart
-    \resumeItem{Spearheaded and judged a university-wide hackathon, and mentored over 200 participants as a workshop speaker.}
-    \resumeItem{Co-lead in two key clubs, driving initiatives in both the technical and R\&D departments.}
-  \resumeItemListEnd
-\resumeSubHeadingListEnd
+%---------------- PROJECTS ----------------
+\section{Projects}
+
+\projectHeading{E-Com -- Full-Stack E-Commerce Application}
+{\href{https://github.com/Auth0r-C0dez/E-Com}{GitHub}}
+\begin{itemize}
+    \resumeItem{Developed a full-stack e-commerce application using React, Redux Toolkit, Node.js, Express.js, and MongoDB, with a modular frontend and backend architecture.}
+    \resumeItem{Implemented REST API modules for authentication, product management, orders, payments, and analytics using Express and Mongoose.}
+    \resumeItem{Integrated JWT-based authentication, Cloudinary for media handling, and Razorpay for payment processing.}
+\end{itemize}
+
+\projectHeading{Vylus -- AI-Powered Automation Platform}
+{Full Stack, GenAI}
+\begin{itemize}
+    \resumeItem{Developing an automation platform connecting Google Calendar, Maps, WhatsApp, Telegram, and web-based workflows to streamline everyday tasks.}
+    \resumeItem{Integrating LLM-based sentiment analysis and intelligent task prioritization to support context-aware automation.}
+    \resumeItem{Designing workflows that combine multiple external services with AI-driven decision-making to automate task execution and management.}
+\end{itemize}
+
+\projectHeading{MailVoyager -- AI Email Automation Agent}
+{FastAPI, Playwright, LLMs}
+\begin{itemize}
+    \resumeItem{Built a natural-language-driven email automation agent with a FastAPI backend and Playwright browser automation.}
+    \resumeItem{Automated Gmail interactions through browser UI workflows without relying on Gmail API or SMTP integrations.}
+    \resumeItem{Implemented an agent workflow that interprets user instructions and translates them into browser actions for email operations.}
+\end{itemize}
+
+\projectHeading{ISROnautsAI -- Satellite Cloud-Motion Prediction}
+{Deep Learning, Computer Vision}
+\begin{itemize}
+    \resumeItem{Developed a cloud-motion prediction pipeline using INSAT-3DR/3DS satellite imagery, processing sequential weather observations for short-term prediction.}
+    \resumeItem{Explored CNN-based and diffusion-model architectures with an encoder-decoder approach and worked on Hugging Face deployment.}
+    \resumeItem{Worked with multi-channel satellite observations across visible, infrared, and water-vapour imagery to support spatiotemporal cloud-motion forecasting.}
+\end{itemize}
+
+%---------------- PUBLICATIONS ----------------
+\section{Publications}
+
+\small
+\textbf{A State-of-Art Survey on Generative AI Techniques for Floor Planning}\\
+\textit{GenAICHI 2025 -- Workshop on Generative AI and Human-Computer Interaction}\\
+\textit{CHI 2025 -- ACM Conference on Human Factors in Computing Systems}
+
+%---------------- TECHNICAL SKILLS ----------------
+\section{Technical Skills}
+
+\small
+\textbf{Programming:} Python, Java, JavaScript, SQL\\
+\textbf{AI/ML:} Machine Learning, Deep Learning, NLP, LLMs, RAG, LangChain, Computer Vision\\
+\textbf{Web Development:} React, Next.js, Node.js, Express.js, MongoDB, FastAPI\\
+\textbf{Tools \& Platforms:} Git, GitHub, Docker, AWS, Ollama, Hugging Face, Render, Postman.
+
+%---------------- LEADERSHIP ----------------
+\section{Leadership \& Activities}
+
+\small
+\begin{itemize}
+    \resumeItem{Spearheaded and judged a university-wide hackathon, contributing to event coordination and technical evaluation.}
+    \resumeItem{Mentored 200+ participants through technical workshops and co-led two student clubs across technical and R\&D activities.}
+\end{itemize}
 
 \end{document}
